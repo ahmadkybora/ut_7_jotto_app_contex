@@ -13,7 +13,7 @@ const Footer = () => {
                                     <div className="form-outline w-75">
                                         <div className="form-group">
                                             <Search 
-                                                onSubmit=""
+                                                onSubmit={null}
                                                 type="" 
                                                 name=""
                                                 className="w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4" 

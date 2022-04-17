@@ -3,9 +3,8 @@ import http from '../../services/httpService';
 import { Error, Success } from '../../utils/exceptionHandler';
 
 export const onLogin = (user) => {
-    console.log(user)
     return async dispatch => {
-        await http.post('http://localhost:8000/login', user)
+        await http.post('/login', user)
             .then(res => {
                 console.log(res)
                 localStorage.getItem('fullName');

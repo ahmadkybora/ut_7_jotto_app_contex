@@ -1,9 +1,10 @@
 import { Error, Success } from "../utils/exceptionHandler"
 import http from "./httpService"
 
-export const getAllUsers = async => {
-    return await http.get("/users")
+export const getAllUsers = async() => {
+    return await http.get("panel/users")
         .then(res => Success(res))
+        .then(res => res.data.data)
         .catch(err => Error(err))
 }
 

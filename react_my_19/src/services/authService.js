@@ -12,7 +12,7 @@ export const loginService = async(payload) => {
             localStorage.setItem('fullName', res.data.data.first_name + ' ' + res.data.data.last_name);
             localStorage.setItem('username', res.data.data.username);
             localStorage.setItem('isAdmin', res.data.data.isAdmin);
-            localStorage.setItem('token', res.data.data.token);
+            localStorage.setItem('token', res.data.data.token.plainTextToken);
 
             Success(res);
 

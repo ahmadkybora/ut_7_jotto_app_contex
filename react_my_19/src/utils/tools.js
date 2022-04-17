@@ -162,8 +162,8 @@ export const Search = ({ onSubmit, type = [], name = [], className = [], id = []
     return (
         <div>
             <form onSubmit={onSubmit}>
-                <div className="input-group">
-                    <div className="form-outline w-75">
+                <div className="">
+                    <div className="">
                         <Input 
                             type={type[0]} 
                             name={name[0]} 

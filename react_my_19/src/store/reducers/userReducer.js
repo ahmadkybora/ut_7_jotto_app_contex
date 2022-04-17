@@ -1,21 +1,20 @@
-import { LOGIN } from '../actions/type';
+import { GetAllUser } from "../actions/type";
 
 const initialState = {
-    user: [],
+    users: [],
 }
 
 export default function(state = initialState, action) {
     switch (action.type) {
-
-        case LOGIN:
+        case GetAllUser:
             {
                 return {
                     ...state,
-                    user: action.payload,
+                    users: action.payload
                 }
             }
 
         default:
-            return state
+            return state;
     }
-};
+}
